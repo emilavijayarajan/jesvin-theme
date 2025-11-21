@@ -1,7 +1,12 @@
 <header>
-  <h2 class="header__title">
-    {{  "Jesvins Textiles (Dev Mode)" | link_to: routes.root_url }}
-  </h2>
+ <h2 class="header__title">
+  {{ "Jesvin Textiles (Branches Mode)" | link_to: routes.root_url }}
+</h2>
+
+<p class="header-date">
+  Today: {{ 'now' | date: "%B %d, %Y" }}
+</p>
+
 
   <div class="header__menu">
     {% for link in section.settings.menu.links %}
